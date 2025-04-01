@@ -2246,13 +2246,19 @@ html {
 footer {
   padding: 20px 0;
   font-family: "Arial", sans-serif;
-  color: #6c757d;
-  background-color: #333;
-    color: #fff;
     text-align: center;
     position: relative;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradient background */
+      color: #ecf0f1; /* Light text color for contrast */
+      padding: 40px 20px;
 }
 
+footer-heading{
+  font-size: 2rem; /* Increased size */
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 20px; /* Space below heading */
+    text-transform: uppercase; 
+}
 .footer p {
   margin: 10px 0;
 }
@@ -2320,13 +2326,39 @@ footer {
   list-style: none;
 }
 
+.footer-link {
+color: #f39c12; /* Original link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Spacing between links */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #e67e22; /* Change to a brighter color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
 .social-icons li a {
   font-size: 20px;
   color: #6c757d;
 }
 
+.social-icons {
+  display: flex; 
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.social-icon {
+  margin: 0 10px; 
+  color: #ecf0f1; 
+  font-size: 24px; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
 .social-icons li a:hover{
   color: #e67e22 !important;
+  transform: scale(1.1);
 }
 
 /* Newsletter Section Styling */
